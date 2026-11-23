@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-     <meta charset="UTF-8">
+<head> <!-- Natalia Salazar - GS MAKEUP -->
+  <meta charset="UTF-8">
   <meta name="description" content="Venta de maquillaje y productos de belleza de diferentes marcas. Encuentra todo lo que necesitas para resaltar tu belleza.">
   <meta name="keywords" content="maquillaje, belleza, cosmeticos, skincare, productos">
   <meta name="author" content="Natalia Salazar">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -17,19 +17,18 @@
 <!--AQUI INICIA EL DESARROLLO DEL CUERPO DE LA PÁGINA-->
 <body>
 <!--ENCABEZADO DE LA PÁGINA-->
-<header class=" header-gs makeup">
+
+<header class="header-punto-mio">
     <div class="container header-inner">
-      <a href="#inicio" class="logo-gsmakeup">
+      <a href="#inicio" class="logo-punto-mio">
         <img src="img/logo.png" alt="Logo de GS MAKEUP">
-        
       </a>
 
       <nav class="main-nav">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#catalogo">Catálogo</a></li>
-          <li><a href="#sobre-mi">Sobre nosotros/a></li>
-          <li><a href="#pedidos-personalizados">Ofertas</a></li>
+          <li><a href="#sobre-mi">Sobre nosotros</a></li>
           <li><a href="#pedidos">Pedidos</a></li>
         </ul>
         <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero realizar una compra en GS MAKEUP.')">
@@ -37,14 +36,201 @@
         </button>
       </nav>
 
-
       <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
 </header>
 
+<!-- INICIO DEL CONTENIDO PRINCIPAL DE LA PÁGINA-->
+<main>
+   <!-- HERO-->
+   <section id="inicio" class="container hero-section">
+      <div class="hero-content fade-in-up">
+        <p class="eyebrow">Todo lo que necesitas para resaltar tu belleza</p>
+        <h1 class="hero-title">Realza tu belleza</h1>
+        <p class="hero-subtitle">
+          GS MAKEUP es tu destino para encontrar maquillaje y productos de belleza de alta calidad. Descubre nuestra amplia gama de productos y realza tu belleza natural con nuestras marcas confiables.
+        </p>
+        <a href="#catalogo" class="btn btn-coffee hero-cta">
+          Descubre nuestros productos <i data-lucide="arrow-right" class="icon-sm"></i>
+        </a>
+      </div>
 
-<h1>GS MAKEUP</h1>
-<p>Bienvenido a nuestra tienda de maquillaje y productos de bellezas.</p>
+      <div class="hero-media">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <img
+          src="img/HERO.png"
+          alt="Productos de maquillaje GS MAKEUP"
+          width="1600"
+          height="1104"
+          class="hero-image"
+        />
+      </div>
+    </section>
+
+    <!-- AQUI AGREGO LA SECCIÓN NOSOTROS-->
+    <section id="sobre-mi" class="about-section">
+      <div class="container about-grid">
+        <img
+          src="img/base.png"
+          alt="Producto de maquillaje de GS MAKEUP"
+          loading="lazy"
+          width="1008"
+          height="1200"
+          class="about-image"
+        />
+        <div>
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2 class="section-title">Resalta tu belleza con GS MAKEUP</h2>
+          <p class="about-text">
+            GS MAKEUP es una tienda dedicada a la venta de maquillaje y productos de belleza de diferentes marcas. Nuestro objetivo es ofrecer productos que te ayuden a resaltar tu belleza natural.
+          </p>
+          <p class="about-text">
+            Contamos con una variedad de productos para complementar tu rutina de belleza, desde bases y polvos hasta labiales, gloss, máscaras y sombras. Queremos que encuentres todo lo que necesitas para expresar tu estilo y sentirte increíble.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AQUI VAN LOS PRODUCTOS -->
+    <section id="catalogo" class="container menu-section">
+      <div class="section-header-center">
+        <p class="eyebrow">Nuestros productos</p>
+        <h2 class="section-title">Catálogo de maquillaje</h2>
+        <p class="muted-note">Descubre nuestra variedad de productos de maquillaje y encuentra tus favoritos para resaltar tu belleza.</p>
+      </div>
+
+      <!-- A CONTINUACIÓN MIS PRODUCTOS-->
+      <div class="products-grid">
+
+<!-- PRODUCTO 1 BASE -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="img/base.png" alt="Base de maquillaje" loading="lazy" width="816" height="816" />
+          </div>
+          <div class="product-body">
+            <div class="product-header">
+              <h3>Base de maquillaje</h3>
+            </div>
+            <p class="product-desc">Encuentra una base para complementar tu maquillaje y conseguir un acabado uniforme en tu piel.</p>
+          </div>
+        </article>
+<!-- FIN PRODUCTO 1 BASE -->
+
+<!-- PRODUCTO 2 ESPONJA -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="img/esponja.png" alt="Esponja de maquillaje" loading="lazy" width="816" height="816" />
+          </div>
+          <div class="product-body">
+            <div class="product-header">
+              <h3>Esponja de maquillaje</h3>
+            </div>
+            <p class="product-desc">Un accesorio ideal para ayudarte a aplicar y difuminar tus productos de maquillaje.</p>
+          </div>
+        </article>
+<!-- FIN PRODUCTO 2 ESPONJA -->
+
+<!-- PRODUCTO 3 GLOSS -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="img/gloss.png" alt="Gloss labial" loading="lazy" width="816" height="816" />
+          </div>
+          <div class="product-body">
+            <div class="product-header">
+              <h3>Gloss</h3>
+            </div>
+            <p class="product-desc">Dale un toque especial a tus labios con un gloss que complementa cualquier estilo de maquillaje.</p>
+          </div>
+        </article>
+<!-- FIN PRODUCTO 3 GLOSS -->
+
+<!-- PRODUCTO 4 LABIAL -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="img/labial.png" alt="Labial" loading="lazy" width="816" height="816" />
+          </div>
+          <div class="product-body">
+            <div class="product-header">
+              <h3>Labial</h3>
+            </div>
+            <p class="product-desc">Encuentra el complemento perfecto para darle color y personalidad a tus labios.</p>
+          </div>
+        </article>
+<!-- FIN PRODUCTO 4 LABIAL -->
+
+<!-- PRODUCTO 6 POLVO -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="img/polvo.png" alt="Polvo de maquillaje" loading="lazy" width="816" height="816" />
+          </div>
+          <div class="product-body">
+            <div class="product-header">
+              <h3>Polvo</h3>
+            </div>
+            <p class="product-desc">Complementa tu rutina de maquillaje con un producto ideal para finalizar tu look.</p>
+          </div>
+        </article>
+<!-- FIN PRODUCTO 6 POLVO -->
+
+<!-- PRODUCTO 7 RÍMEL -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="img/rimel.png" alt="Rímel" loading="lazy" width="816" height="816" />
+          </div>
+          <div class="product-body">
+            <div class="product-header">
+              <h3>Rímel</h3>
+            </div>
+            <p class="product-desc">Resalta tu mirada y complementa tu maquillaje con este producto para pestañas.</p>
+          </div>
+        </article>
+<!-- FIN PRODUCTO 7 RÍMEL -->
+
+<!-- PRODUCTO 8 SOMBRAS -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="img/sombras.png" alt="Sombras de maquillaje" loading="lazy" width="816" height="816" />
+          </div>
+          <div class="product-body">
+            <div class="product-header">
+              <h3>Sombras</h3>
+            </div>
+            <p class="product-desc">Crea diferentes estilos y dale color a tu mirada con nuestras sombras de maquillaje.</p>
+          </div>
+        </article>
+<!-- FIN PRODUCTO 8 SOMBRAS -->
+
+      </div>
+    </section>
+
+</main> <!-- FIN DEL CONTENIDO PRINCIPAL DE LA PÁGINA-->
+
+<!-- Footer -->
+  <footer class="site-footer" id="pedidos">
+    <div class="container footer-inner">
+      <a href="#inicio" class="logo-punto-mio" aria-label="GS MAKEUP, inicio">
+        <img src="img/logo.png" alt="Logo de GS MAKEUP">
+      </a>
+
+      <nav class="footer-nav" aria-label="Navegación pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre-mi">Sobre nosotros</a>
+        <a href="#pedidos">Pedidos</a>
+      </nav>
+
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © <span id="current-year"></span> GS MAKEUP. Todos los derechos reservados.
+    </p>
+  </footer>
+
+<script src="js/script.js" defer></script>
 
 </body>
 </html>

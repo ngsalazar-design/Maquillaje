@@ -1,61 +1,48 @@
-/* RESET CSS */
-
-*{ margin: 0;
-    padding: 0;
-  
-}
-
+/* RESET CSS*/
+* {margin:0; 
+    padding:0;
+    }
 :root {
-  --cream: #FFF7FA;
-  --paper: #FFFFFF;
-  --ink: #171317;
-  --muted: #8A737E;
-  --coral: #F8C6D8;
-  --coral-dark: #E9A6C0;
-  --butter: #FFE4EE;
-  --sage: #F5D5E1;
-  --sage-dark: #C982A1;
-  --line: #F4DCE6;
+--rosa: #F7C8D8;
+    --rosa-claro: #FFF1F5;
+    --rosa-fuerte: #E89AB5;
+    --vino: #8F4565;
+    --blanco: #FFFFFF;
+    --negro: #292329;
+    --gris: #777078;
+    --line: #F0DCE4;
+    --fondo: #FFFBFC;
 }
-
 body{
-    font-family:  "Newsreader", serif;
+    font-family: "Caveat", cursive;
     margin:0;
-    color: var(--ink);
-    background: var(--cream);
-    overflow-x: hidden;
-  
+    color: var(--negro);
+    background: var(--fondo);
+  overflow-x: hidden;    
 }
-
-ul{
+ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-
+    margin: 0; padding: 0; 
 }
-
-a{
-    text-decoration: none;
-    color: inherit;
+a { 
+    text-decoration: none; 
+    color: inherit; 
 }
-
-img{
-    max-width: 100%;
-    height: block;
+img { 
+    max-width: 100%; 
+    display: block; 
 }
-
-.container{
-    width: min(1100px, calc(100% - 2rem));
-    margin: 0 auto;
-    padding:0 1.25rem;
+.container { 
+    width: min(1100px, calc(100% - 2rem)); 
+    margin: 0 auto; 
+    padding: 0 1.25rem;
 }
-
 /* ---------- Encabezado ---------- */
-.header-gsmakeup {
+.header-punto-mio {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255,253,248,.92);
+  background: var(--fondo);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
 }
@@ -67,16 +54,15 @@ img{
   min-height: 80px;
 }
 
-.logo-gsmakeup {
+.logo-punto-mio {
   display: flex;
   align-items: center;
   gap: .6rem;
   flex-shrink: 0;
-
 }
 
-.logo-gsmakeup img {
-  height: 500px;
+.logo-punto-mio img {
+  height: 200px;
   width: auto;
   max-width: 200px;
   object-fit: contain;
@@ -105,14 +91,14 @@ img{
 
 .main-nav a {
   text-decoration: none;
-  color: #1f2937;
+  color: var(--negro);
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 
 .main-nav a:hover {
-  color: #2563eb; /* Color principal de TECHIY */
+  color: var(--vino); /* Color principal de GS MAKEUP */
 }
 
 
@@ -124,8 +110,8 @@ img{
   padding: 0.65rem 1.25rem;
   border: none;
   border-radius: 9999px;
-  background-color: #2563eb; /* Ajusta al color de tu marca */
-  color: #ffffff;
+  background-color: var(--vino); /* Ajusta al color de tu marca */
+  color: var(--blanco);
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -145,6 +131,7 @@ img{
 
 
 /* Ajuste básico para celulares */
+
 @media (max-width: 768px) {
   .header-inner {
     flex-wrap: wrap;
@@ -163,4 +150,294 @@ img{
     gap: 0.85rem;
     font-size: 0.9rem;
   }
+}
+
+/* CONFIGURACION DEL HERO */
+.hero-section {
+  display: grid;
+  align-items: center;
+  gap: 2.5rem;
+  padding-block: 3.5rem;
+}
+
+
+@media (min-width: 768px) {
+  .hero-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding-block: 6rem;
+  }
+}
+
+
+.hero-title {
+  margin-top: 1rem;
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.1;
+}
+
+
+.hero-subtitle {
+  margin-top: 1.5rem;
+  max-width: 28rem;
+  font-size: 1.125rem;
+  color: var(--gris);
+}
+
+
+.hero-cta {
+  margin-top: 2rem;
+}
+
+
+.hero-media {
+  position: relative;
+}
+
+
+.hero-backdrop {
+  position: absolute;
+  inset: -0.75rem;
+  z-index: -1;
+  border-radius: 2rem;
+  background-color: var(--rosa);
+}
+
+
+@media (min-width: 768px) {
+  .hero-backdrop {
+    transform: translate(1.5rem, 1.5rem);
+  }
+}
+
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 1.75rem;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.fade-in-up {
+  animation: fadeInUp 0.7s ease-out both;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--vino);
+}
+/* ---------- SECCIÓN NOSOTROS ---------- */
+.section-header-center {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.section-title {
+  margin-top: 0.5rem;
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  line-height: 1.15;
+}
+
+
+.muted-note {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--gris);
+}
+.about-section {
+  background-color: var(--rosa-claro);
+  color: var(--negro);
+  padding-block: 5rem;
+}
+.about-grid {
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.about-image {
+  width: 100%;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.about-text {
+  margin-top: 1.5rem;
+  opacity: 0.88;
+}
+.about-text + .about-text {
+
+  margin-top: 1rem;
+}
+.menu-section {
+  padding-block: 5rem;
+}
+.products-grid {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+@media (min-width: 640px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: var(--blanco); /* Diferente al fondo --fondo */
+  border: 1px solid var(--line);  /* Delimita cada tarjeta */
+  box-shadow: 0 4px 12px rgba(143, 69, 101, 0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(143, 69, 101, 0.18);
+}
+
+
+.product-image-wrap {
+  overflow: hidden;
+}
+
+
+.product-image-wrap img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+.product-card:hover .product-image-wrap img {
+  transform: scale(1.05);
+}
+
+
+.product-body {
+  padding: 1.5rem;
+}
+
+
+.product-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+.product-header h3 {
+  font-size: 1.25rem;
+  color: var(--vino);
+}
+
+
+.product-price {
+  font-weight: 600;
+  color: var(--vino);
+}
+
+
+.product-desc {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--gris);
+}
+
+ /* ---------- Pie de página ---------- */
+.site-footer {
+  background-color: var(--rosa-claro);
+  color: var(--vino);
+}
+
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 3rem;
+}
+
+
+@media (min-width: 768px) {
+  .footer-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+}
+
+
+.footer-nav a,
+.social-links a {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+
+.footer-nav a:hover,
+.social-links a:hover {
+  opacity: 1;
+}
+
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.copyright {
+  border-top: 1px solid var(--vino);
+  background-color: var(--vino);
+  color: var(--blanco);
+  padding-block: 1.25rem;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.7;
 }
