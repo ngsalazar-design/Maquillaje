@@ -7,6 +7,7 @@
   <meta name="author" content="Natalia Salazar">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
   <script src="https://unpkg.com/lucide@latest" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
 
@@ -221,6 +222,71 @@
       </div>
     </section>
 
+<!--Dirección y contacto-->
+
+<section id="contacto" class="container contact-section">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-title">Escríbenos</h2>
+        <p class="muted-note">Estamos aquí para ayudarte. Si tienes dudas sobre nuestros productos,
+      precios o pedidos, no dudes en contactarnos</p>
+
+
+        <ul class="contact-list">
+          <li><a href="https://maps.app.goo.gl/k4yUL2AribV4rQ1a6" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="map-pin" class="contact-icon" ></i> Calle atasta 175, Col. San Antonio</li></a>
+          <li><i data-lucide="phone" class="contact-icon"></i> (55) 44526684</li>
+          <li><i data-lucide="mail" class="contact-icon"></i> ng.salazar@gmail.com</li>
+          <li><i data-lucide="clock" class="contact-icon"></i> Lunes a sábado, 10:00 AM - 8:00 PM</li>
+        </ul>
+
+
+        <a
+          href="https://wa.me/525544526684"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp-btn"
+        >
+          <i data-lucide="message-circle" class="icon-sm"></i> WhatsApp (+52 5544526684)
+        </a>
+        <p class="footnote">+52 5544526684.</p>
+      </div>
+
+<!--FORMULARIO DE CONTACTO-->
+
+     <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" maxlength="100" />
+          <p id="error-name" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" maxlength="255" />
+          <p id="error-email" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000"></textarea>
+          <p id="error-message" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <button type="submit" class="btn-formulario">Enviar mensaje</button>
+
+
+        <p id="form-status" class="form-status" role="status" hidden>
+          ¡Gracias por escribirnos! 
+        </p>
+      </form>
+    </section>
+
+
+
 
 </main> <!-- FIN DEL CONTENIDO PRINCIPAL DE LA PÁGINA-->
 
@@ -239,8 +305,9 @@
       </nav>
 
       <div class="social-links">
-        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        <a href="https://www.instagram.com/natalia_svd0?dmpr=Z2o0YWhxc3ltdDMw&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/18gbQUX9UT/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@nataliasvd?_r=1&_t=ZS-9BjFJADoyzS" target="_blank" arget="_blank" rel="noopener noreferrer" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
       </div>
     </div>
 
